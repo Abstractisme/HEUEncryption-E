@@ -10,34 +10,34 @@
 
 int main(void)
 {
-    /*³õÊ¼»¯½×¶Î*/
+    /*åˆå§‹åŒ–é˜¶æ®µ*/
     char* judge[2];
     char* judge2[6];
     char c;
     char ch;
     int passwd = 1;
     int n1, n2, n3;
-    /*»¶Ó­½çÃæ*/
-    printf("»¶Ó­À´µ½HEU¼ÓÃÜÈí¼ş£¡\nPowered by 1528 Group.\n");
+    /*æ¬¢è¿ç•Œé¢*/
+    printf("æ¬¢è¿æ¥åˆ°HEUåŠ å¯†è½¯ä»¶ï¼\nPowered by 1528 Group.\n");
     printf("------------------------\n");
-    printf("ÇëÊäÈëÄãµÄÑ¡Ôñ:\nA ¼ÓÃÜÎÄ×Ö \nB ½âÃÜÎÄ×Ö\nC ½«¼ÓÃÜÒò×Ó×ª»»ÎªÎÄ×Ö\nD ½«¼ÓÃÜĞÅÏ¢Ğ´ÈëÎÄ±¾ÎÄµµ\nE ¶ÁÈ¡ÎÄ±¾ÎÄµµµÄ¼ÓÃÜĞÅÏ¢\nQ ÍË³ö\n");
+    printf("è¯·è¾“å…¥ä½ çš„é€‰æ‹©:\nA åŠ å¯†æ–‡å­— \nB è§£å¯†æ–‡å­—\nC å°†åŠ å¯†å› å­è½¬æ¢ä¸ºæ–‡å­—\nD å°†åŠ å¯†ä¿¡æ¯å†™å…¥æ–‡æœ¬æ–‡æ¡£\nE è¯»å–æ–‡æœ¬æ–‡æ¡£çš„åŠ å¯†ä¿¡æ¯\nQ é€€å‡º\n");
     printf("________________________\n");
     scanf("%c", judge);
     while (getchar() != '\n')
           continue;
-    /*ÅÅ³ı´íÎó*/
+    /*æ’é™¤é”™è¯¯*/
     for (;stricmp(judge, "A") != 0&&stricmp(judge, "B") != 0&&stricmp(judge, "C") != 0&&stricmp(judge, "D") != 0&&stricmp(judge, "E") != 0&&stricmp(judge, "Q") != 0;)
     {
-        printf("ÊäÈë´íÎó£¡ÇëÖØĞÂÊäÈë£¡");
+        printf("è¾“å…¥é”™è¯¯ï¼è¯·é‡æ–°è¾“å…¥ï¼");
         break;
     }
 
-    /*A.¼ÓÃÜÎÄ×Ö*/
+    /*A.åŠ å¯†æ–‡å­—*/
     while (stricmp(judge, "A") == 0)
 {
     {
-    /*×ÖÊıÍ³¼Æ*/
-    printf("µÚÒ»²½£º×ÖÊıÍ³¼Æ£ºÇëÊäÈëÒª¼ÓÃÜÓï¾ä (ÊäÈë¡°|¡±»Ø³µ½áÊøÊäÈë£¬²»ĞèÒªÍ³¼ÆµÄ»°£¬ÊäÈë¡°|¡±»Ø³µÌø¹ı):\n");
+    /*å­—æ•°ç»Ÿè®¡*/
+    printf("ç¬¬ä¸€æ­¥ï¼šå­—æ•°ç»Ÿè®¡ï¼šè¯·è¾“å…¥è¦åŠ å¯†è¯­å¥ (è¾“å…¥â€œ|â€å›è½¦ç»“æŸè¾“å…¥ï¼Œä¸éœ€è¦ç»Ÿè®¡çš„è¯ï¼Œè¾“å…¥â€œ|â€å›è½¦è·³è¿‡):\n");
 
     long n_chars = 0;
     int n_lines = 0;
@@ -64,15 +64,15 @@ int main(void)
 
         }
 
-    printf("½á¹û£º×ÖÊı = %ld, µ¥´Ê = %d¸ö, ĞĞÊı = %d \n ",n_chars, n_words, n_lines);
+    printf("ç»“æœï¼šå­—æ•° = %ld, å•è¯ = %dä¸ª, è¡Œæ•° = %d \n ",n_chars, n_words, n_lines);
     }
 
-    /*¼ÓÃÜ*/
-    printf("ÇëÊäÈë¼ÓÃÜÒò×Ó£¨¼ÓÃÜÒò×ÓÊÇÈÎÒâÁ½Î»ÒÔÄÚ·Ç0ÕûÊı£¬Ïàµ±ÓÚÃÜÂë£¬ÇëÍ×ÉÆ±£´æ£º£©\n");
+    /*åŠ å¯†*/
+    printf("è¯·è¾“å…¥åŠ å¯†å› å­ï¼ˆåŠ å¯†å› å­æ˜¯ä»»æ„ä¸¤ä½ä»¥å†…é0æ•´æ•°ï¼Œç›¸å½“äºå¯†ç ï¼Œè¯·å¦¥å–„ä¿å­˜ï¼šï¼‰\n");
     scanf("%d", &passwd);
     while (getchar() != '\n')
           continue;
-    printf("ÇëÊäÈëÒª¼ÓÃÜµÄÄÚÈİ£¬ÊäÈë¡°|¡±»Ø³µ½áÊøÊäÈë£º");
+    printf("è¯·è¾“å…¥è¦åŠ å¯†çš„å†…å®¹ï¼Œå›è½¦ç»“æŸè¾“å…¥ï¼š");
     ch = getchar();
         while (ch != '\n')
         {
@@ -86,22 +86,22 @@ int main(void)
 
         }
     putchar(ch);
-    printf("¼ÓÃÜÍê³É£¡Çë±£´æÄÚÈİ¡£\n");
+    printf("åŠ å¯†å®Œæˆï¼è¯·ä¿å­˜å†…å®¹ã€‚\n");
     break;
 }
 
 
 
-    /*B.½âÃÜÎÄ×Ö*/
+    /*B.è§£å¯†æ–‡å­—*/
     while (stricmp(judge, "B") == 0)
 {
 
     {
-        printf("ÇëÊäÈë¼ÓÃÜÒò×Ó£º\n");
+        printf("è¯·è¾“å…¥åŠ å¯†å› å­ï¼š\n");
         scanf("%d", &passwd);
         while (getchar() != '\n')
           continue;
-        printf("ÇëÊäÈëÒª½âÃÜµÄÄÚÈİ£¬ÍË³ö½âÃÜÇëÊäÈë¡°|¡±²¢»Ø³µ£º");
+        printf("è¯·è¾“å…¥è¦è§£å¯†çš„å†…å®¹ï¼Œé€€å‡ºè§£å¯†è¯·è¾“å…¥â€œ|â€å¹¶å›è½¦ï¼š");
 
     {
         ch = getchar();
@@ -120,89 +120,83 @@ int main(void)
     }
 
         putchar(ch);
-        printf("½âÃÜ³É¹¦£¡\n");
+        printf("è§£å¯†æˆåŠŸï¼\n");
 
     }
 }
 
 
 
-    /*C.Êı×Ö×ª»»*/
+    /*C.æ•°å­—è½¬æ¢*/
     while (stricmp(judge, "C") == 0)
     {
-        printf("ÇëÊäÈëÁ½Î»¼ÓÃÜÒò×Ó£¬±¾³ÌĞò½«×Ô¶¯×ª»»Êı×ÖÎª¿É¼ÓÃÜµÄÎÄ±¾ĞÎÊ½£¨ÊäÈë123ÍË³ö£©:\n");
+        printf("è¯·è¾“å…¥ä¸¤ä½åŠ å¯†å› å­ï¼Œæœ¬ç¨‹åºå°†è‡ªåŠ¨è½¬æ¢æ•°å­—ä¸ºå¯åŠ å¯†çš„æ–‡æœ¬å½¢å¼ï¼ˆè¾“å…¥ä»»æ„å¤§äº100çš„æ•°é€€å‡ºï¼‰:\n");
         scanf("%d", &n1);
 
-    while (n1 >= 100 && n1 != 123)
+    while (n1 >= 100)
     {
-        printf("ºÜ±§Ç¸£¬³¬³ö·¶Î§£¡");
-        break;
-    }
-    while (n1 = 123)
-    {
-        printf("ÕıÔÚÍË³ö");
+        printf("å¾ˆæŠ±æ­‰ï¼Œè¶…å‡ºèŒƒå›´ï¼é€€å‡ºç¨‹åº...\n");
         exit(0);
     }
 
-
     while (n1 == 10)
     {
-        printf("Ê®\n");
+        printf("å\n");
         break;
     }
 
     while (n1 == 11)
     {
-        printf("Ê®Ò»\n");
+        printf("åä¸€\n");
         break;
     }
 
     while (n1 == 12)
     {
-        printf("Ê®¶ş\n");
+        printf("åäºŒ\n");
         break;
     }
 
     while (n1 == 13)
     {
-        printf("Ê®Èı\n");
+        printf("åä¸‰\n");
         break;
     }
 
     while (n1 == 14)
     {
-        printf("Ê®ËÄ\n");
+        printf("åå››\n");
         break;
     }
 
     while (n1 == 15)
     {
 
-        printf("Ê®Îå\n");
+        printf("åäº”\n");
         break;
     }
 
     while (n1 == 16)
     {
-        printf("Ê®Áù\n");
+        printf("åå…­\n");
         break;
     }
 
     while (n1 == 17)
     {
-        printf("Ê®Æß\n");
+        printf("åä¸ƒ\n");
         break;
     }
 
     while (n1 == 18)
     {
-        printf("Ê®°Ë\n");
+        printf("åå…«\n");
         break;
     }
 
     while (n1 == 19)
     {
-        printf("Ê®¾Å\n");
+        printf("åä¹\n");
         break;
     }
 
@@ -214,35 +208,35 @@ int main(void)
     switch (n3)
     {
         case 2:
-            printf("¶şÊ®");
+            printf("äºŒå");
             break;
 
         case 3:
-            printf("ÈıÊ®");
+            printf("ä¸‰å");
             break;
 
         case 4:
-            printf("ËÄÊ®");
+            printf("å››å");
             break;
 
         case 5:
-            printf("ÎåÊ®");
+            printf("äº”å");
             break;
 
         case 6:
-            printf("ÁùÊ®");
+            printf("å…­å");
             break;
 
         case 7:
-            printf("ÆßÊ®");
+            printf("ä¸ƒå");
             break;
 
         case 8:
-            printf("°ËÊ®");
+            printf("å…«å");
             break;
 
         case 9:
-            printf("¾ÅÊ®");
+            printf("ä¹å");
             break;
 
     }
@@ -251,80 +245,82 @@ int main(void)
 
     {
         case 1:
-            printf("Ò»\n");
+            printf("ä¸€\n");
             break;
 
         case 2:
-            printf("¶ş\n");
+            printf("äºŒ\n");
             break;
 
         case 3:
-            printf("Èı\n");
+            printf("ä¸‰\n");
             break;
 
         case 4:
-            printf("ËÄ\n");
+            printf("å››\n");
             break;
 
         case 5:
-            printf("Îå\n");
+            printf("äº”\n");
             break;
 
         case 6:
-            printf("Áù\n");
+            printf("å…­\n");
             break;
 
         case 7:
-            printf("Æß\n");
+            printf("ä¸ƒ\n");
             break;
 
         case 8:
-            printf("°Ë\n");
+            printf("å…«\n");
             break;
 
         case 9:
-            printf("¾Å\n");
+            printf("ä¹\n");
             break;
 
     }
-}
-
+    }
     }
 
 
-    /*D.Éú³ÉÎÄ±¾ÎÄµµ*/
+    /*D.ç”Ÿæˆæ–‡æœ¬æ–‡æ¡£*/
     while (stricmp(judge, "D") == 0)
 {
 
-    printf("ÎÄ¼şÃûÎªjiami.txt:ÇëÊäÈëÒÑ¼ÓÃÜµÄÎÄ×Ö£¬ÊäÈë|²¢»Ø³µ±£´æ¡£\n");
-    FILE*fp=NULL;//ĞèÒª×¢Òâ
-    fp=fopen("jiami.txt","w");  //´´½¨ÎÄ¼ş
+    printf("æ–‡ä»¶åä¸ºjiami.txt:è¯·è¾“å…¥å·²åŠ å¯†çš„æ–‡å­—ï¼Œè¾“å…¥|å¹¶å›è½¦ä¿å­˜ã€‚\n");
+    FILE*fp=NULL;//éœ€è¦æ³¨æ„
+    fp=fopen("jiami.txt","w");  //åˆ›å»ºæ–‡ä»¶
 
     if(NULL==fp)
-        return -1;//Òª·µ»Ø´íÎó´úÂë
+        return -1;//è¦è¿”å›é”™è¯¯ä»£ç 
     while((c = getchar()) != STOP)
-        fprintf(fp,"%c",c); //´Ó¿ØÖÆÌ¨ÖĞ¶ÁÈë²¢ÔÚÎÄ±¾Êä³ö
+        fprintf(fp,"%c",c); //ä»æ§åˆ¶å°ä¸­è¯»å…¥å¹¶åœ¨æ–‡æœ¬è¾“å‡º
     fclose(fp);
-    fp=NULL;//ĞèÒªÖ¸Ïò¿Õ£¬·ñÔò»áÖ¸ÏòÔ­´ò¿ªÎÄ¼şµØÖ·
+    fp=NULL;//éœ€è¦æŒ‡å‘ç©ºï¼Œå¦åˆ™ä¼šæŒ‡å‘åŸæ‰“å¼€æ–‡ä»¶åœ°å€
     break;
 }
 
 
-    /*E.½âÃÜÎÄ±¾ÎÄµµ*/
+    /*E.è§£å¯†æ–‡æœ¬æ–‡æ¡£*/
     while (stricmp(judge, "E") == 0)
 {
-    printf("ÏÂÃæÄÚÈİÀ´×ÔÄ¿Â¼ÏÂµÄjiami.txt, Èç¹û¼ì²â²»µ½ÎÄ¼ş½«»áÖ±½ÓÍË³ö£¡\n");
+    printf("ä¸‹é¢å†…å®¹æ¥è‡ªç›®å½•ä¸‹çš„jiami.txt, å¦‚æœæ£€æµ‹ä¸åˆ°æ–‡ä»¶å°†ä¼šç›´æ¥é€€å‡ºï¼\n");
     FILE *fp;
-    fp = fopen("jiami.txt","r");//´Ë´¦µÚÒ»¸ö²ÎÊı£¬¿ÉÒÔĞŞ¸ø³ÉÄãĞèÒªµÄÎÄ±¾ÎÄµµ¾ø¶ÔÂ·¾¶
+    fp = fopen("jiami.txt","r");//æ­¤å¤„ç¬¬ä¸€ä¸ªå‚æ•°ï¼Œå¯ä»¥ä¿®ç»™æˆä½ éœ€è¦çš„æ–‡æœ¬æ–‡æ¡£ç»å¯¹è·¯å¾„
     char ch;
     while((ch = fgetc(fp)) != EOF)
       {
       putchar(ch);
       }
+    system("pause");
     exit(0);
 }
+    /*Q.é€€å‡º*/
     while (stricmp(judge, "Q") == 0)
         exit(0);
     system("pause");
     return 0;
 }
+
